@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cálculo de IMC</h1>
+        <hr>
+    </header>
+    <main>
+        <h2>O que é IMC?</h2>
+        <p><strong>IMC</strong> significa <strong>Í</strong>ndice de <strong>M</strong>assa <strong>C</strong>orporal,
+            que consiste em um cálculo em que o resultado é utilizado para
+            indicar o estado nutricional em adultos. (WORLD..., 2022)</p>
+
+        <fieldset>
+            <legend>IMC</legend>
+            <label for="peso">Peso (KG):</label>
+            <input type="number" name="peso" id="peso"><br>
+            <label for="altura">Altura (M):</label>
+            <input type="number" name="altura" id="altura"><br>
+            <input type="button" onclick="validar()" value="Calcular">
+            <input type="text" name="resultado" id="resultado" disabled>
+        </fieldset>
+
+        <table>
+            <tr>
+                <th>IMC</td>
+                <th>Estado Nutricional</td>
+            </tr>
+            <tr>
+                <td>
+                    Abaixo de 18,5
+                </td>
+                <td>
+                    Abaixo do peso
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    18,5–24,9
+                </td>
+                <td>
+                    Peso normal
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    25,0–29,9
+                </td>
+                <td>
+                    Pré-obesidade
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    30,0–34,9
+                </td>
+                <td>
+                    Obesidade classe I
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    35,0–39,9
+                </td>
+                <td>
+                    Obesidade classe II
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Acima de 40
+                </td>
+                <td>
+                    Obesidade classe III
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        WORLD HEALTH ORGANIZATION. Body mass index - BMI. [S.l.]. World Health Organization, 2022. Disponível em:
+        https://www.euro.who.int/en/health-topics/disease-prevention/nutrition/a-healthy-lifestyle/body-mass-index-bmi.
+        Acesso em: 7 abr. 2022.
+    </footer>
+</body>
+
+</html>
